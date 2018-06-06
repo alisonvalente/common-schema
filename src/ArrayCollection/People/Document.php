@@ -15,11 +15,11 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ArrayCollection\People;
+namespace Gpupo\CommonSchema\ArrayCollection\Person;
 
 use Gpupo\CommonSchema\ArrayCollection\Thing\AbstractIdentification;
 
 final class Document extends AbstractIdentification
 {
-    protected $tableName = 'people_document';
+    protected $tableName = 'person_document';
 }

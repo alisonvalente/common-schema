@@ -15,15 +15,15 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ORM\Entity\People;
+namespace Gpupo\CommonSchema\ORM\Entity\Person;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * AlternativePhone.
  *
- * @ORM\Table(name="cs_people_alternative_phone")
- * @ORM\Entity(repositoryClass="Gpupo\CommonSchema\ORM\Repository\People\AlternativePhoneRepository")
+ * @ORM\Table(name="cs_person_alternative_phone")
+ * @ORM\Entity(repositoryClass="Gpupo\CommonSchema\ORM\Repository\Person\AlternativePhoneRepository")
  */
 class AlternativePhone extends \Gpupo\CommonSchema\AbstractORMEntity
 {

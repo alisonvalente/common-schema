@@ -15,17 +15,17 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ORM\Entity\People;
+namespace Gpupo\CommonSchema\ORM\Entity\Person;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * People.
+ * Person.
  *
- * @ORM\Table(name="cs_people")
- * @ORM\Entity(repositoryClass="Gpupo\CommonSchema\ORM\Repository\People\PeopleRepository")
+ * @ORM\Table(name="cs_person")
+ * @ORM\Entity(repositoryClass="Gpupo\CommonSchema\ORM\Repository\Person\PersonRepository")
  */
-class People extends \Gpupo\CommonSchema\AbstractORMEntity
+class Person extends \Gpupo\CommonSchema\AbstractORMEntity
 {
     /**
      * @var int
@@ -72,9 +72,9 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     private $expands;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\Phone
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\Phone
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\Phone")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\Phone")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="phone_id", referencedColumnName="id", unique=true)
      * })
@@ -82,9 +82,9 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     private $phone;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="alternative_phone_id", referencedColumnName="id", unique=true)
      * })
@@ -92,9 +92,9 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     private $alternative_phone;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\Document
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\Document
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\Document")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\Document")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="document_id", referencedColumnName="id", unique=true)
      * })
@@ -116,7 +116,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
      *
      * @param string $nickname
      *
-     * @return People
+     * @return Person
      */
     public function setNickname($nickname)
     {
@@ -140,7 +140,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
      *
      * @param string $email
      *
-     * @return People
+     * @return Person
      */
     public function setEmail($email)
     {
@@ -164,7 +164,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
      *
      * @param string $firstName
      *
-     * @return People
+     * @return Person
      */
     public function setFirstName($firstName)
     {
@@ -188,7 +188,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
      *
      * @param string $lastName
      *
-     * @return People
+     * @return Person
      */
     public function setLastName($lastName)
     {
@@ -212,7 +212,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
      *
      * @param array $expands
      *
-     * @return People
+     * @return Person
      */
     public function setExpands($expands)
     {
@@ -234,11 +234,11 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set phone.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\Phone $phone
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\Phone $phone
      *
-     * @return People
+     * @return Person
      */
-    public function setPhone(\Gpupo\CommonSchema\ORM\Entity\People\Phone $phone = null)
+    public function setPhone(\Gpupo\CommonSchema\ORM\Entity\Person\Phone $phone = null)
     {
         $this->phone = $phone;
 
@@ -248,7 +248,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get phone.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\Phone
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\Phone
      */
     public function getPhone()
     {
@@ -258,11 +258,11 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set alternativePhone.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone $alternativePhone
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone $alternativePhone
      *
-     * @return People
+     * @return Person
      */
-    public function setAlternativePhone(\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone $alternativePhone = null)
+    public function setAlternativePhone(\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone $alternativePhone = null)
     {
         $this->alternative_phone = $alternativePhone;
 
@@ -272,7 +272,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get alternativePhone.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone
      */
     public function getAlternativePhone()
     {
@@ -282,11 +282,11 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set document.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\Document $document
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\Document $document
      *
-     * @return People
+     * @return Person
      */
-    public function setDocument(\Gpupo\CommonSchema\ORM\Entity\People\Document $document = null)
+    public function setDocument(\Gpupo\CommonSchema\ORM\Entity\Person\Document $document = null)
     {
         $this->document = $document;
 
@@ -296,7 +296,7 @@ class People extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get document.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\Document
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\Document
      */
     public function getDocument()
     {

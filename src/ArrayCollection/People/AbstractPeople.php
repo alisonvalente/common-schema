@@ -15,11 +15,11 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ArrayCollection\People;
+namespace Gpupo\CommonSchema\ArrayCollection\Person;
 
 use Gpupo\CommonSchema\ArrayCollection\Thing\AbstractEntity;
 
-abstract class AbstractPeople extends AbstractEntity
+abstract class AbstractPerson extends AbstractEntity
 {
     /**
      * @codeCoverageIgnore

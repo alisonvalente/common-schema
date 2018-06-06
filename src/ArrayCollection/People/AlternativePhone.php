@@ -15,11 +15,11 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ArrayCollection\People;
+namespace Gpupo\CommonSchema\ArrayCollection\Person;
 
 use Gpupo\CommonSchema\ArrayCollection\Thing\AbstractPhone;
 
 final class AlternativePhone extends AbstractPhone
 {
-    protected $tableName = 'people_alternative_phone';
+    protected $tableName = 'person_alternative_phone';
 }

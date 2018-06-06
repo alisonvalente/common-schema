@@ -72,9 +72,9 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     private $expands;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\Phone
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\Phone
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\Phone")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\Phone")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="phone_id", referencedColumnName="id", unique=true)
      * })
@@ -82,9 +82,9 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     private $phone;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="alternative_phone_id", referencedColumnName="id", unique=true)
      * })
@@ -92,9 +92,9 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     private $alternative_phone;
 
     /**
-     * @var \Gpupo\CommonSchema\ORM\Entity\People\Document
+     * @var \Gpupo\CommonSchema\ORM\Entity\Person\Document
      *
-     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\People\Document")
+     * @ORM\OneToOne(targetEntity="Gpupo\CommonSchema\ORM\Entity\Person\Document")
      * @ORM\JoinColumns({
      *   @ORM\JoinColumn(name="document_id", referencedColumnName="id", unique=true)
      * })
@@ -254,11 +254,11 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set phone.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\Phone $phone
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\Phone $phone
      *
      * @return Customer
      */
-    public function setPhone(\Gpupo\CommonSchema\ORM\Entity\People\Phone $phone = null)
+    public function setPhone(\Gpupo\CommonSchema\ORM\Entity\Person\Phone $phone = null)
     {
         $this->phone = $phone;
 
@@ -268,7 +268,7 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get phone.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\Phone
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\Phone
      */
     public function getPhone()
     {
@@ -278,11 +278,11 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set alternativePhone.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone $alternativePhone
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone $alternativePhone
      *
      * @return Customer
      */
-    public function setAlternativePhone(\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone $alternativePhone = null)
+    public function setAlternativePhone(\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone $alternativePhone = null)
     {
         $this->alternative_phone = $alternativePhone;
 
@@ -292,7 +292,7 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get alternativePhone.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\AlternativePhone
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\AlternativePhone
      */
     public function getAlternativePhone()
     {
@@ -302,11 +302,11 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Set document.
      *
-     * @param null|\Gpupo\CommonSchema\ORM\Entity\People\Document $document
+     * @param null|\Gpupo\CommonSchema\ORM\Entity\Person\Document $document
      *
      * @return Customer
      */
-    public function setDocument(\Gpupo\CommonSchema\ORM\Entity\People\Document $document = null)
+    public function setDocument(\Gpupo\CommonSchema\ORM\Entity\Person\Document $document = null)
     {
         $this->document = $document;
 
@@ -316,7 +316,7 @@ class Customer extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * Get document.
      *
-     * @return null|\Gpupo\CommonSchema\ORM\Entity\People\Document
+     * @return null|\Gpupo\CommonSchema\ORM\Entity\Person\Document
      */
     public function getDocument()
     {

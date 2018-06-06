@@ -15,9 +15,9 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ArrayCollection\People;
+namespace Gpupo\CommonSchema\ArrayCollection\Person;
 
-final class People extends AbstractPeople
+final class Person extends AbstractPerson
 {
-    protected $tableName = 'people';
+    protected $tableName = 'person';
 }

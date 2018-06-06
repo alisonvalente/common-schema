@@ -39,7 +39,7 @@ class Payment extends \Gpupo\CommonSchema\AbstractORMEntity
     /**
      * @var int
      *
-     * @ORM\Column(name="payment_number", type="bigint")
+     * @ORM\Column(name="payment_number", type="string")
      */
     private $payment_number;
 

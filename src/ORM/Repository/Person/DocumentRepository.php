@@ -15,7 +15,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Gpupo\CommonSchema\ORM\Repository\People;
+namespace Gpupo\CommonSchema\ORM\Repository\Person;
 
 /**
  * DocumentRepository.
